@@ -1,0 +1,496 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #F2F2F2;
+    color: #333333;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+#header-frame {
+    background-color: #FFFFFF;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.08);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+#header-frame .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+}
+
+.logo {
+    font-size: 1.8em;
+    color: #34495E;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 5px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333333;
+    padding: 8px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #34495E;
+    color: #FFFFFF;
+}
+
+#hero {
+    background: linear-gradient(to right, #34495E, #2C3E50);
+    padding: 80px 0;
+    color: #FFFFFF;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.3);
+}
+
+#hero .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.hero-content {
+    flex: 1;
+    padding-right: 20px;
+    text-align: left;
+    color: #FFFFFF;
+}
+
+.hero-content h1 {
+    font-size: 2.8em;
+    color: #FFFFFF;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    font-size: 1.3em;
+    margin-bottom: 30px;
+}
+
+.cta-button {
+    background-color: #FFA000;
+    color: #FFFFFF;
+    padding: 14px 28px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.2em;
+    font-weight: bold;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.25);
+}
+
+.cta-button:hover {
+    background-color: #E68A00;
+    transform: translateY(-2px);
+}
+
+.hero-carousel-wrapper {
+    max-width: 40%;
+    flex-shrink: 0;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+}
+
+.hero-carousel-wrapper .carousel-item img {
+    height: auto;
+    width: 100%;
+    display: block;
+    object-fit: cover;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    display: none;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    filter: drop-shadow(0 0 5px rgba(0,0,0,0.5));
+}
+
+.carousel-indicators [data-bs-target] {
+    background-color: rgba(255,255,255,0.7);
+}
+.carousel-indicators .active {
+    background-color: #FFFFFF;
+}
+
+.carousel-indicators {
+    display: none;
+}
+
+#penawaran {
+    padding: 60px 0;
+    background-color: #FFFFFF;
+}
+
+#penawaran h2 {
+    font-size: 2.2em;
+    color: #34495E;
+    text-align: center;
+    margin-bottom: 40px;
+    position: relative;
+}
+
+#penawaran h2::after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 3px;
+    background-color: #FFA000;
+    margin: 10px auto 0;
+}
+
+.offers-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+}
+
+.offer-item {
+    border: 1px solid #E0E0E0;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background-color: #FFFFFF;
+}
+
+.offer-item:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.offer-item img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    display: block;
+}
+
+.offer-item h3 {
+    padding: 15px;
+    margin: 0;
+    font-size: 1.4em;
+    color: #34495E;
+}
+
+.offer-item p {
+    padding: 0 15px;
+    margin-bottom: 15px;
+    color: #666666;
+}
+
+.view-details {
+    display: block;
+    padding: 12px 15px;
+    background-color: #FFA000;
+    color: #FFFFFF;
+    text-decoration: none;
+    text-align: center;
+    border-top: 1px solid #E68A00;
+    transition: background-color 0.3s ease;
+    font-weight: bold;
+}
+
+.view-details:hover {
+    background-color: #E68A00;
+}
+
+.section-content {
+    padding: 60px 0;
+    background-color: #FFFFFF;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+.section-content:nth-of-type(odd) {
+    background-color: #FDFDFD;
+}
+
+.section-content h2 {
+    font-size: 2.2em;
+    color: #34495E;
+    text-align: center;
+    margin-bottom: 40px;
+    position: relative;
+}
+.section-content h2::after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 3px;
+    background-color: #FFA000;
+    margin: 10px auto 0;
+}
+
+.section-content p {
+    font-size: 1.1em;
+    color: #555555;
+    line-height: 1.8;
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#daftar-penerbangan table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    margin-top: 30px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: #FFFFFF;
+}
+
+#daftar-penerbangan thead th {
+    background-color: #34495E;
+    color: #FFFFFF;
+    padding: 15px 12px;
+    text-align: left;
+    font-weight: bold;
+    font-size: 1.05em;
+    border-bottom: 2px solid #FFA000;
+}
+
+#daftar-penerbangan tbody td {
+    padding: 12px;
+    border-bottom: 1px solid #E0E0E0;
+    color: #333333;
+    vertical-align: middle;
+}
+
+#daftar-penerbangan tbody tr:nth-child(even) {
+    background-color: #F8F8F8;
+}
+
+#daftar-penerbangan tbody tr:hover {
+    background-color: #EFEFEF;
+    transition: background-color 0.2s ease;
+}
+
+.airline-logo {
+    max-width: 50px;
+    height: auto;
+    display: block;
+    border-radius: 4px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+.btn-table-action {
+    display: inline-block;
+    padding: 8px 15px;
+    background-color: #FFA000;
+    color: #FFFFFF;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 0.9em;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    text-align: center;
+}
+
+.btn-table-action:hover {
+    background-color: #E68A00;
+}
+
+#daftar-penerbangan table thead tr:first-child th:first-child {
+    border-top-left-radius: 10px;
+}
+#daftar-penerbangan table thead tr:first-child th:last-child {
+    border-top-right-radius: 10px;
+}
+#daftar-penerbangan table tbody tr:last-child td:first-child {
+    border-bottom-left-radius: 10px;
+}
+#daftar-penerbangan table tbody tr:last-child td:last-child {
+    border-bottom-right-radius: 10px;
+}
+#daftar-penerbangan tbody tr:last-child td {
+    border-bottom: none;
+}
+
+@media (max-width: 768px) {
+    #daftar-penerbangan thead {
+        display: none;
+    }
+    #daftar-penerbangan table,
+    #daftar-penerbangan tbody,
+    #daftar-penerbangan tr,
+    #daftar-penerbangan td {
+        display: block;
+        width: 100%;
+    }
+    #daftar-penerbangan tr {
+        margin-bottom: 15px;
+        border: 1px solid #E0E0E0;
+        border-radius: 10px;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+        padding: 15px;
+    }
+    #daftar-penerbangan td {
+        border: none;
+        position: relative;
+        padding-left: 50%;
+        text-align: right;
+    }
+    #daftar-penerbangan td::before {
+        content: attr(data-label);
+        position: absolute;
+        left: 10px;
+        width: 45%;
+        padding-right: 10px;
+        white-space: nowrap;
+        text-align: left;
+        font-weight: bold;
+        color: #34495E;
+    }
+    .airline-logo {
+        float: left;
+        margin-right: 10px;
+    }
+    .btn-table-action {
+        width: 100%;
+        margin-top: 10px;
+    }
+    #daftar-penerbangan table tbody tr:last-child td {
+        border-bottom: 1px solid #E0E0E0;
+    }
+}
+
+form {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 30px;
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+}
+
+.form-group {
+    margin-bottom: 0;
+}
+
+.form-group.full-width-input {
+    grid-column: 1 / -1;
+    text-align: center;
+}
+
+form label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 8px;
+    color: #34495E;
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="date"],
+form input[type="number"],
+form select,
+form textarea {
+    width: calc(100% - 24px);
+    padding: 12px;
+    border: 1px solid #BDC3C7;
+    border-radius: 8px;
+    font-size: 1em;
+    transition: border-color 0.3s ease;
+}
+
+form input[type="text"]:focus,
+form input[type="email"]:focus,
+form input[type="date"]:focus,
+form input[type="number"]:focus,
+form select:focus,
+form textarea:focus {
+    border-color: #34495E;
+    outline: none;
+    box-shadow: 0 0 5px rgba(52, 73, 94, 0.3);
+}
+
+form textarea {
+    resize: none;
+}
+
+.form-group.full-width-input textarea {
+    width: 100%;
+    margin: 0 auto;
+    box-sizing: border-box;
+    text-align: left;
+    outline: none;
+
+}
+
+.submit-button {
+    grid-column: 1 / -1;
+    background-color: #34495E;
+    color: #FFFFFF;
+    padding: 15px 25px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1.2em;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+}
+
+.submit-button:hover {
+    background-color: #2C3E50;
+    transform: translateY(-2px);
+}
+
+.confirmation-message {
+    margin-top: 30px;
+    padding: 20px;
+    border: 1px solid #28A745;
+    background-color: #EBF7EC;
+    border-radius: 8px;
+    text-align: center;
+    color: #333333;
+    font-size: 1.1em;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+.confirmation-message h3 {
+    color: #28A745;
+    margin-top: 0;
+}
+
+footer {
+    background-color: #34495E;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 25px 0;
+    margin-top: 40px;
+    box-shadow: 0 -2px 5px rgba(0,0,0,0.05);
+}

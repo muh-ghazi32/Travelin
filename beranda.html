@@ -1,0 +1,235 @@
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travelin!</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header id="header-frame">
+        <div class="container">
+            <a href="#" class="logo">Travelin!</a>
+            <nav>
+                <ul>
+                    <li><a href="#beranda"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-house-fill" viewBox="0 0 19 18"><path d="M8.707 1.5a1 1 0 0 0-1.414 0L.646 8.146a.5.5 0 0 0 .708.708L8 2.207l6.646 6.647a.5.5 0 0 0 .708-.708L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293z"/><path d="m8 3.293 6 6V13.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5V9.293z"/></svg>Beranda</a></li>
+                    <li><a href="#penawaran"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-ticket-fill" viewBox="0 0 19 18"><path d="M1.5 3A1.5 1.5 0 0 0 0 4.5V6a.5.5 0 0 0 .5.5 1.5 1.5 0 1 1 0 3 .5.5 0 0 0-.5.5v1.5A1.5 1.5 0 0 0 1.5 13h13a1.5 1.5 0 0 0 1.5-1.5V10a.5.5 0 0 0-.5-.5 1.5 1.5 0 0 1 0-3A.5.5 0 0 0 16 6V4.5A1.5 1.5 0 0 0 14.5 3z"/></svg>Penawaran</a></li>
+                    <li><a href="#daftar-penerbangan"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-airplane-fill" viewBox="0 0 19 18">
+                    <path d="M6.428 1.151C6.708.591 7.213 0 8 0s1.292.592 1.572 1.151C9.861 1.73 10 2.431 10 3v3.691l5.17 2.585a1.5 1.5 0 0 1 .83 1.342V12a.5.5 0 0 1-.582.493l-5.507-.918-.375 2.253 1.318 1.318A.5.5 0 0 1 10.5 16h-5a.5.5 0 0 1-.354-.854l1.319-1.318-.376-2.253-5.507.918A.5.5 0 0 1 0 12v-1.382a1.5 1.5 0 0 1 .83-1.342L6 6.691V3c0-.568.14-1.271.428-1.849"/></svg>Daftar Penerbangan</a></li>
+                    <li><a href="#tentang-kami"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-vcard" viewBox="0 0 19 18"><path d="M5 8a2 2 0 1 0 0-4 2 2 0 0 0 0 4m4-2.5a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 0 1h-4a.5.5 0 0 1-.5-.5M9 8a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 0 1h-4A.5.5 0 0 1 9 8m1 2.5a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 0 1h-3a.5.5 0 0 1-.5-.5"/><path d="M2 2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2zM1 4a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H8.96q.04-.245.04-.5C9 10.567 7.21 9 5 9c-2.086 0-3.8 1.398-3.984 3.181A1 1 0 0 1 1 12z"/></svg>Tentang Kami</a></li>
+                    <li><a href="#kritik-saran"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="20" fill="currentColor" class="bi bi-chat-square-text-fill" viewBox="0 0 19 18"><path d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2h-2.5a1 1 0 0 0-.8.4l-1.9 2.533a1 1 0 0 1-1.6 0L5.3 12.4a1 1 0 0 0-.8-.4H2a2 2 0 0 1-2-2zm3.5 1a.5.5 0 0 0 0 1h9a.5.5 0 0 0 0-1zm0 2.5a.5.5 0 0 0 0 1h9a.5.5 0 0 0 0-1zm0 2.5a.5.5 0 0 0 0 1h5a.5.5 0 0 0 0-1z"/></svg>Kritik & Saran</a></li>
+                    <li><a href="login.html"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="20" fill="currentColor" class="bi bi-person-fill" viewBox="0 0 17 18"><path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6"/></svg>Akun</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+<section id="hero">
+    <div class="container">
+        <div class="hero-content">
+            <h1>Halo, Selamat Datang Di Travelin!</h1>
+            <p>Temukan tiket dengan harga terbaik, pesan tiket pesawat dengan mudah dan cepat, dan dapatkan penawaran eksklusif dan harga terbaik!</p>
+            <a href="tiket.html" class="cta-button">Pesan Sekarang</a>
+        </div>
+        <div class="hero-carousel-wrapper">
+            <div id="heroCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="2000">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="Images/garuda1.jpg" class="d-block w-100" alt="Pesawat Garuda Indonesia">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="Images/wings1.jpg" class="d-block w-100" alt="Pesawat Wings Air">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="Images/citilink2.jpg" class="d-block w-100" alt="Pesawat Citilink">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+    </div>
+</section>
+    <section id="penawaran" class="section-content">
+        <div class="container">
+            <h2>Penawaran Spesial</h2>
+            <div class="offers-grid">
+                <div class="offer-item">
+                    <img src="Images/bali.webp" alt="Bali">
+                    <h3>Bali, <br> Provinsi Bali</h3>
+                    <p style="text-align: justify;">Bali adalah primadona pariwisata Indonesia yang sudah terkenal di seluruh dunia. Selain terkenal dengan keindahan alam, terutama pantainya, Bali juga terkenal dengan kesenian dan budayanya yang unik dan menarik. Industri pariwisata berpusat di Bali Selatan dan di beberapa daerah lainnya. Lokasi wisata yang utama adalah Kuta dan sekitarnya seperti Legian dan Seminyak, Sanur, Ubud, dan di daerah selatan seperti Jimbaran, Nusa Dua dan Pecatu.</p>
+                    <p style="text-align: left;">Rp 850.000</p>
+                    <a href="tiket.html" class="view-details">Pesan Tiket</a>
+                </div>
+                <div class="offer-item">
+                    <img src="Images/Jakarta.jpg" alt="Jakarta">
+                    <h3>Jakarta, <br> DKI Jakarta</h3>
+                    <p style="text-align: justify;">Jakarta merupakan salah satu destinasi wisata yang cukup baik di Indonesia. Untuk meningkatkan jumlah wisatawan yang berkunjung ke Jakarta, pemerintah mengadakan program "Enjoy Jakarta". Beberapa tempat pariwisata yang terkenal dan biasa dikunjungi oleh para wisatawan lokal dan mancanegara di antaranya adalah Taman Mini Indonesia Indah, Pulau Seribu, Kebun Binatang Ragunan, dan Taman Impian Jaya Ancol </p>
+                    <p style="text-align: left;"><br>Rp 500.000</p>
+                    <a href="tiket.html" class="view-details">Pesan Tiket</a>
+                </div>
+                <div class="offer-item">
+                    <img src="Images/Surabaya.jpeg" alt="Surabaya">
+                    <h3>Surabaya, <br>Provinsi Jawa Timur</h3>
+                    <p style="text-align: justify;">Surabaya memiliki berbagai tempat wisata menarik yang cocok untuk berbagai kalangan. Beberapa tempat wisata populer di Surabaya antara lain Tugu Pahlawan, Kebun Binatang Surabaya, House of Sampoerna, Jembatan Suramadu, dan Masjid Al Akbar. Selain itu, ada juga beberapa tempat wisata edukasi seperti Museum Sepuluh November, Museum Kapal Selam (Monkasel), dan Museum 10 November. Untuk wisata malam, Anda bisa mengunjungi Suroboyo Carnival Park.</p>
+                    <p style="text-align: left;">Rp 450.000</p>
+                    <a href="tiket.html" class="view-details">Pesan Tiket</a>
+                </div>
+                <div class="offer-item">
+                    <img src="Images/banjarmasin.webp" class="d-block w-100" alt="Banjarmasin">
+                    <h3>Banjarmasin, <br>Provinsi Kalimantan Selatan</h3>
+                    <p style="text-align: justify;">Banjarmasin, dikenal sebagai Kota Seribu Sungai, menawarkan beragam tempat wisata menarik. Beberapa di antaranya adalah Pasar Terapung Lok Baintan, Masjid Raya Sabilal Muhtadin, Bukit Meratus, dan Pulau Kembang. Selain itu, ada juga Menara Pandang Siring Sungai Martapura, Patung Bekantan, dan Duta Mall yang bisa menjadi pilihan untuk dikunjungi</p>
+                    <p style="text-align: left;"><br><br><br><br>Rp 600.000 </p>
+                    <a href="tiket.html" class="view-details">Pesan Tiket</a>
+                </div>
+                <div class="offer-item">
+                    <img src="Images/raja ampat.jpg" class="d-block w-100" alt="Raja Ampat">
+                    <h3>Pulau Raja Ampat, <br>Provinsi Papua Barat Daya </h3>
+                    <p style="text-align: justify;">Raja Ampat dikenali dengan keindahan laut dan pemandangannya. Pulau ini diakui sebagai rumah bagi keanekaragaman hayati terumbu karang terbesar di dunia. Dengan lebih dari 550 varietas karang yang berbeda, 700 jenis moluska, dan 1.427 spesies ikan yang berbeda, wilayah ini merupakan pusat keanekaragaman hayati laut yang signifikan. Tujuh puluh lima persen dari seluruh spesies karang yang diketahui dapat ditemukan di perairan sekitar Kepulauan Raja Ampat, yang merupakan rumah bagi beberapa spesies paling beragam di dunia.</p>
+                    <p style="text-align: left;"><br>Rp 600.000</p>
+                    <a href="tiket.html" class="view-details">Pesan Tiket</a>
+                </div>
+                    <div class="offer-item">
+                    <img src="Images/pulau komodo.jpg" class="d-block w-100" alt="Pulau Komodo">
+                    <h3>Pulau Komodo, <br>Provinsi Nusa Tenggara Timur </h3>
+                    <p style="text-align: justify;">Pulau Komodo adalah sebuah pulau yang terletak di Kepulauan Nusa Tenggara, berada di sebelah timur Pulau Sumbawa, yang dipisahkan oleh Selat Sape. Pulau Komodo dikenal sebagai habitat asli hewan komodo. Taman Nasional Komodo (TNK) adalah kawasan konservasi yang didirikan berdasarkan Pengumuman Menteri Pertanian pada 6 Maret 1980. TNK menjadi salah satu tujuan wisata utama di Indonesia berkat keberadaan komodo, hewan endemik yang ikonik.</p>
+                    <p style="text-align: left;"><br><br>Rp 600.000</p>
+                    <a href="tiket.html" class="view-details">Pesan Tiket</a>
+                </div>
+                </div>                
+        </div>
+    </section>
+    <section id="daftar-penerbangan" class="section-content">
+    <div class="container">
+        <h2>Daftar Penerbangan Tersedia: </h2>
+        <div class="table-responsive"> <table>
+                <thead>
+                    <tr>
+                        <th>Maskapai</th>
+                        <th>Logo</th>
+                        <th>Rute</th>
+                        <th>Jadwal</th>
+                        <th>Durasi</th>
+                        <th>Harga Mulai</th>
+                        <th>Aksi</th>
+                    </tr>
+                </thead>            
+                <tbody>
+                    <tr>
+                        <td>Garuda Indonesia</td>
+                        <td><img src="Images/logo_garuda.png" alt="Logo Garuda" class="airline-logo"></td>
+                        <td>Jakarta (CGK) - Denpasar (DPS)</td>
+                        <td>08:00 WIB <br> 11:00 WITA</td>
+                        <td>2j 00m</td>
+                        <td>Rp 850.000</td>
+                        <td><a href="tiket.html" class="btn-table-action">Pilih</a></td>
+                    </tr>
+                    <tr>
+                        <td>Lion Air</td>
+                        <td><img src="Images/logo_lionair.png" alt="Logo Lion Air" class="airline-logo"></td>
+                        <td>Surabaya (SUB) - Jakarta (CGK)</td>
+                        <td>14:30 WIB <br> 16:00 WIB</td>
+                        <td>1j 30m</td>
+                        <td>Rp 450.000</td>
+                        <td><a href="tiket.html" class="btn-table-action">Pilih</a></td>
+                    </tr>
+                    <tr>
+                        <td>Wings Air</td>
+                        <td><img src="Images/wings air.png" alt="Logo Citilink" class="airline-logo"></td>
+                        <td>Denpasar (DPS) - Surabaya (SUB)</td>
+                        <td>19:00 WITA <br> 19:30 WIB</td>
+                        <td>1j 30m</td>
+                        <td>Rp 400.000</td>
+                        <td><a href="tiket.html" class="btn-table-action">Pilih</a></td>
+                    </tr>
+                        <tr>
+                        <td>Batik Air</td>
+                        <td><img src="Images/batik air_logo.png" alt="Logo Citilink" class="airline-logo"></td>
+                        <td>Banjarmasin (BDJ) - Surabaya (SUB)</td>
+                        <td>19:00 WITA <br> 19:30 WIB</td>
+                        <td>1j 30m</td>
+                        <td>Rp 400.000</td>
+                        <td><a href="tiket.html" class="btn-table-action">Pilih</a></td>
+                    </tr>
+                        <tr>
+                        <td>Pelita Air</td>
+                        <td><img src="Images/pelita.webp" alt="Logo Citilink" class="airline-logo"></td>
+                        <td>Jakarta (CGK) - Surabaya (SUB)</td>
+                        <td>19:00 WIB <br> 19:30 WIB</td>
+                        <td>1j 30m</td>
+                        <td>Rp 400.000</td>
+                        <td><a href="tiket.html" class="btn-table-action">Pilih</a></td>
+                    </tr>
+                        <tr>
+                        <td>Citilink</td>
+                        <td><img src="Images/logo_citilink.png" alt="Logo Citilink" class="airline-logo"></td>
+                        <td>Denpasar (DPS) - Labuan Bajo (LBJ)</td>
+                        <td>19:00 WITA <br> 19:30 WITA</td>
+                        <td>1j 30m</td>
+                        <td>Rp 400.000</td>
+                        <td><a href="tiket.html" class="btn-table-action">Pilih</a></td>
+                    </tr>
+                    </tbody>
+            </table>
+        </div>
+    </div>
+</section>
+    <section id="tentang-kami" class="section-content">
+        <div class="container">
+            <h2>Tentang Kami</h2>
+            <p style="text-align: justify;">Travelin merupakan agen perjalanan (travel) terpercaya yang menyediakan layanan pemesanan tiket pesawat dengan harga terbaik, murah dan terjangkau untuk masyarakat Indonesia dimanapun berada dari sabang sampai dengan merauke. Kami memiliki tujuan yaitu untuk memberikan pengalaman perjalanan yang terbaik, nyaman, aman dan tak terlupakan. Kami sangat senang dapat membantu para pemesan tiket dan juga kami berterimakasih atas dukungan dan kepercayaan Anda semua. </p>
+        </div>
+    </section>
+    <section id="kritik-saran" class="section-content">
+        <div class="container">
+            <h2>Kritik & Saran</h2>
+            <form id="kritikSaranForm">
+                <div class="form-group">
+                    <label for="kritikNama">Nama (Opsional):</label>
+                    <input type="text" id="kritikNama" name="kritikNama" class="form-control">
+                </div>
+                <div class="form-group">
+                     <label for="kritikEmail">Email (Opsional):</label>
+                    <input type="email" id="kritikEmail" name="kritikEmail" class="form-control">
+                </div>
+                <div class="form-group full-width-input">
+                    <label for="saran">Saran Anda:</label>
+                    <textarea id="saran" name="saran" rows="5" required class="form-control"></textarea>
+                </div>
+                <button type="submit" class="submit-button btn btn-primary">Kirim Saran</button>
+            </form>
+            <div id="saranConfirmation" class="confirmation-message alert alert-info" style="display:none;">
+                <p>Terima kasih atas saran Anda!</p>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Travelin. All rights reserved.</p>
+            <p>Jika Anda memiliki pertanyaan atau ingin memberikan masukan, silakan hubungi kami melalui:</p>
+          <p><svg xmlns="http://www.w3.org/2000/svg" width="16" height="20" fill="white" class="bi bi-envelope-fill" viewBox="0 0 16 16">
+            <path d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414zM0 4.697v7.104l5.803-3.558zM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586zm3.436-.586L16 11.801V4.697z"/>
+            </svg> Email: travelinaja@gmail.com | <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="white" class="bi bi-telephone-fill" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z"/>
+            </svg> Telepon: +62 123 4567 890 | <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="white" class="bi bi-tiktok" viewBox="0 0 16 16"><path d="M9 0h1.98c.144.715.54 1.617 1.235 2.512C12.895 3.389 13.797 4 15 4v2c-1.753 0-3.07-.814-4-1.829V11a5 5 0 1 1-5-5v2a3 3 0 1 0 3 3z"/>
+            </svg> Tiktok: @travelinaja | <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="white" class="bi bi-instagram" viewBox="0 0 16 16">
+            <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"/></svg> Instagram: @travelinaja <br></p>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+    <script src="script.js"></script>
+</body>
+</html>

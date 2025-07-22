@@ -1,0 +1,34 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login ke Travelindo</title>
+    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="login-container">
+        <div class="login-box">
+            <h2>Masuk ke Akun Anda</h2>
+            <form id="loginForm">
+                <div class="input-group">
+                    <label for="username">Nama Pengguna atau Email</label>
+                    <input type="text" id="username" name="username" required>
+                </div>
+                <div class="input-group">
+                    <label for="password">Kata Sandi</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+                <button type="submit" class="login-button">Masuk</button>
+            </form>
+            <div class="links">
+                <a href="#" class="forgot-password">Lupa Kata Sandi?</a>
+                <span>Belum punya akun? <a href="register.html" class="register-link">Daftar Sekarang</a></span>
+            </div>
+            <div id="message" class="message" style="display:none;"></div>
+        </div>
+    </div>
+
+    <script src="login.js"></script>
+</body>
+</html>

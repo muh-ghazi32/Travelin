@@ -1,0 +1,41 @@
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daftar Akun Baru - Travelindo</title>
+    <link rel="stylesheet" href="register.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="register-container">
+        <div class="register-box">
+            <h2>Daftar Akun Baru</h2>
+            <form id="registerForm">
+                <div class="input-group">
+                    <label for="username">Nama Pengguna</label>
+                    <input type="text" id="username" name="username" required>
+                </div>
+                <div class="input-group">
+                    <label for="email">Alamat Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="input-group">
+                    <label for="password">Kata Sandi</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+                <div class="input-group">
+                    <label for="confirm_password">Konfirmasi Kata Sandi</label>
+                    <input type="password" id="confirm_password" name="confirm_password" required>
+                </div>
+                <button type="submit" class="register-button">Daftar</button>
+            </form>
+            <div class="links">
+                Sudah punya akun? <a href="login.html" class="login-link">Masuk di sini</a>
+            </div>
+            <div id="message" class="message" style="display:none;"></div>
+        </div>
+    </div>
+
+    <script src="register.js"></script>
+</body>
+</html>

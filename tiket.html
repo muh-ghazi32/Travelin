@@ -1,0 +1,53 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travelindo - Tiket Pesawat</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+        <section id="pemesanan" class="section-content">
+        <div class="container">
+            <h2>Pesan Tiket Anda</h2>
+            <form id="bookingForm">
+                <div class="form-group">
+                    <label for="nama">Nama Lengkap:</label>
+                    <input type="text" id="nama" name="nama" class="form-control" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" class="form-control" required>
+                </div>
+                <div class="form-group">
+                    <label for="asal">Kota Asal:</label>
+                    <input type="text" id="asal" name="asal" class="form-control" required>
+                </div>
+                <div class="form-group">
+                    <label for="tujuan">Kota Tujuan:</label>
+                    <input type="text" id="tujuan" name="tujuan" class="form-control" required>
+                </div>
+                 <div class="form-group">
+                    <label for="tanggalBerangkat">Tanggal Berangkat:</label>
+                    <input type="date" id="tanggalBerangkat" name="tanggalBerangkat" class="form-control" required>
+                </div>
+                <div class="form-group">
+                    <label for="jumlahPenumpang">Jumlah Penumpang:</label>
+                    <input type="number" id="jumlahPenumpang" name="jumlahPenumpang" min="1" value="1" class="form-control" required>
+                </div>
+                <div class="form-group">
+                    <label for="kelas">Kelas Penerbangan:</label>
+                    <select id="kelas" name="kelas" class="form-select">
+                        <option value="ekonomi">Ekonomi</option>
+                        <option value="bisnis">Bisnis</option>
+                        <option value="first">First Class</option>
+                    </select>
+                </div>
+                <button href="penerbangan.html" type="submit" class="submit-button btn btn-primary">Pesan Tiket</button>
+            </form>
+            <div id="bookingConfirmation" class="confirmation-message alert alert-success" style="display:none;">
+                <h3>Pemesanan Berhasil!</h3>
+                <p>Terima kasih, <span id="confirmNama"></span>. Detail pemesanan Anda telah dikirimkan ke email: <span id="confirmEmail"></span>.</p>
+            </div>
+        </div>
+    </section>
+    <script src="script.js"></script>
+</html>
